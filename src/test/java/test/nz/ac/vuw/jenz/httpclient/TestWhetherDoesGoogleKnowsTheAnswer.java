@@ -8,6 +8,8 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import java.net.URI;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -20,8 +22,8 @@ public class TestWhetherDoesGoogleKnowsTheAnswer {
     @Test
     public void test() throws Exception {
         URIBuilder builder = new URIBuilder();
-        builder.setScheme("http").setHost("www.google.com").setPath("/search")
-                .setParameter("q", "the answer to life the universe and everything");
+        builder.setScheme("http").setHost("localhost").setPort(8080).setPath("/resthome4logs/logs")
+                .setParameter("q", "debug, it works");
         URI uri = builder.build();
         // http://localhost:8080/resthome4logs
         // create and execute the request
@@ -34,8 +36,7 @@ public class TestWhetherDoesGoogleKnowsTheAnswer {
         String content = EntityUtils.toString(response.getEntity());
 
         // check whether the web page contains the expected answer
-        assertTrue(content
-                .indexOf("42") > -1);
+        assertEquals(response.getStatusLine().getStatusCode(),200);
     }
 
 }
