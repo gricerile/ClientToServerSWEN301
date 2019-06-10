@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="720896f7-abf3-4c1d-9e18-46e68391dde6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180813.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Appender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/jenz/httpclient/TestWhetherDoesGoogleKnowsTheAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/jenz/httpclient/TestWhetherDoesGoogleKnowsTheAnswer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httpclient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/httpclient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/jenz/httpclient/TestWhetherDoesGoogleKnowsTheAnswer.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,16 +29,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/jenz/httpclient/TestWhetherDoesGoogleKnowsTheAnswer.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            <state relative-caret-position="391">
+              <caret line="33" column="63" selection-start-line="25" selection-start-column="8" selection-end-line="33" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,18 +45,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/test-classes/test/nz/ac/vuw/jenz/httpclient/TestWhetherDoesGoogleKnowsTheAnswer.class">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Appender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="528">
+              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
               <folding>
-                <element signature="e#0#1170#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#574#584#0" expanded="true" />
+                <element signature="e#1224#1225#0" expanded="true" />
+                <element signature="e#1266#1267#0" expanded="true" />
+                <element signature="e#1293#1294#0" expanded="true" />
+                <element signature="e#1327#1328#0" expanded="true" />
+                <element signature="e#1366#1367#0" expanded="true" />
+                <element signature="e#1394#1395#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.class">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,23 +94,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/jenz/httpclient/TestWhetherDoesGoogleKnowsTheAnswer.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/httpclient.iml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_11.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/TestWhetherDoesGoogleKnowsTheAnswer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Appender.java" />
       </list>
     </option>
   </component>
@@ -83,6 +113,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,6 +130,27 @@
               <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
               <item name="httpclient" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="httpclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="httpclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="httpclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -114,7 +166,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="httpclient" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
@@ -170,7 +222,7 @@
               <item name="nz" type="462c0819:PsiDirectoryNode" />
               <item name="ac" type="462c0819:PsiDirectoryNode" />
               <item name="vuw" type="462c0819:PsiDirectoryNode" />
-              <item name="jenz" type="462c0819:PsiDirectoryNode" />
+              <item name="swen301" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
@@ -181,22 +233,38 @@
               <item name="nz" type="462c0819:PsiDirectoryNode" />
               <item name="ac" type="462c0819:PsiDirectoryNode" />
               <item name="vuw" type="462c0819:PsiDirectoryNode" />
-              <item name="jenz" type="462c0819:PsiDirectoryNode" />
+              <item name="swen301" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
               <item name="httpclient" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="nz" type="462c0819:PsiDirectoryNode" />
+              <item name="ac" type="462c0819:PsiDirectoryNode" />
+              <item name="vuw" type="462c0819:PsiDirectoryNode" />
+              <item name="swen301" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment3" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -210,23 +278,55 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestWhetherDoesGoogleKnowsTheAnswer.test">
-    <configuration name="TestWhetherDoesGoogleKnowsTheAnswer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BlackBoxTests">
+    <configuration name="BlackBoxTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="httpclient" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.nz.ac.vuw.jenz.httpclient.*" />
+          <option name="PATTERN" value="test.nz.ac.vuw.swen301.assignment3.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.nz.ac.vuw.jenz.httpclient" />
-      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.jenz.httpclient.TestWhetherDoesGoogleKnowsTheAnswer" />
+      <option name="PACKAGE_NAME" value="test.nz.ac.vuw.swen301.assignment3.client" />
+      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.swen301.assignment3.client.BlackBoxTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BlackBoxTests.testDoGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="httpclient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.nz.ac.vuw.swen301.assignment3.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.nz.ac.vuw.swen301.assignment3.client" />
+      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.swen301.assignment3.client.BlackBoxTests" />
+      <option name="METHOD_NAME" value="testDoGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlackBoxTests.testDoPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="httpclient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.nz.ac.vuw.swen301.assignment3.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.nz.ac.vuw.swen301.assignment3.client" />
+      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.swen301.assignment3.client.BlackBoxTests" />
+      <option name="METHOD_NAME" value="testDoPost" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.testDoGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="httpclient" />
       <extension name="coverage">
         <pattern>
@@ -236,7 +336,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="test.nz.ac.vuw.jenz.httpclient" />
       <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.jenz.httpclient.TestWhetherDoesGoogleKnowsTheAnswer" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="testDoGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.testDoPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="httpclient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.nz.ac.vuw.jenz.httpclient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.nz.ac.vuw.jenz.httpclient" />
+      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.jenz.httpclient.TestWhetherDoesGoogleKnowsTheAnswer" />
+      <option name="METHOD_NAME" value="testDoPost" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -244,8 +360,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestWhetherDoesGoogleKnowsTheAnswer.test" />
-        <item itemvalue="JUnit.TestWhetherDoesGoogleKnowsTheAnswer" />
+        <item itemvalue="JUnit.BlackBoxTests" />
+        <item itemvalue="JUnit.BlackBoxTests.testDoGet" />
+        <item itemvalue="JUnit.BlackBoxTests.testDoPost" />
+        <item itemvalue="JUnit.TestWhetherDoesGoogleKnowsTheAnswer.testDoPost" />
+        <item itemvalue="JUnit.TestWhetherDoesGoogleKnowsTheAnswer.testDoGet" />
       </list>
     </recent_temporary>
   </component>
@@ -259,94 +378,136 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560040761250</updated>
-      <workItem from="1560040764183" duration="3714000" />
+      <workItem from="1560040764183" duration="7650000" />
+      <workItem from="1560124666167" duration="6646000" />
+      <workItem from="1560134674928" duration="4404000" />
     </task>
+    <task id="LOCAL-00001" summary="got connection with a response, the server is happy also, although there is one hiccup where the client request throws errors in the server, because the parameters in the clients request are not their when the server is looking for them. So had to comment out heaps in the server so i could get a positive response for both the client and the server.">
+      <created>1560045402352</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560045402352</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer - 2019.06.09 at 13h 34m 02s.xml">
-      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer" configurationId="JUnit" />
+    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer_testDoPost - 2019.06.10 at 12h 09m 57s.xml">
+      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.testDoPost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer - 2019.06.09 at 13h 36m 19s.xml">
-      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer" configurationId="JUnit" />
+    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer_testDoPost - 2019.06.10 at 12h 13m 13s.xml">
+      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.testDoPost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer - 2019.06.09 at 13h 37m 58s.xml">
-      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer" configurationId="JUnit" />
+    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer_testDoPost - 2019.06.10 at 12h 21m 36s.xml">
+      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.testDoPost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer_test - 2019.06.09 at 13h 42m 56s.xml">
-      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.test" configurationId="JUnit" />
+    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer_testDoGet_(1) - 2019.06.10 at 12h 51m 37s.xml">
+      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.testDoGet (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer_test - 2019.06.09 at 13h 44m 26s.xml">
-      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.test" configurationId="JUnit" />
+    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer_testDoPost_(1) - 2019.06.10 at 12h 52m 03s.xml">
+      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.testDoPost (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests_testDoPost - 2019.06.10 at 12h 54m 48s.xml">
+      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests_testDoGet - 2019.06.10 at 12h 54m 54s.xml">
+      <configuration name="BlackBoxTests.testDoGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests_testDoGet - 2019.06.10 at 13h 36m 23s.xml">
+      <configuration name="BlackBoxTests.testDoGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests_testDoGet - 2019.06.10 at 15h 03m 09s.xml">
+      <configuration name="BlackBoxTests.testDoGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests - 2019.06.10 at 15h 03m 30s.xml">
+      <configuration name="BlackBoxTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3714000" />
+    <option name="totallyTimeSpent" value="18700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32969433" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32969433" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2554585" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.13427947" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32969433" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="got connection with a response, the server is happy also, although there is one hiccup where the client request throws errors in the server, because the parameters in the clients request are not their when the server is looking for them. So had to comment out heaps in the server so i could get a positive response for both the client and the server." />
+    <option name="LAST_COMMIT_MESSAGE" value="got connection with a response, the server is happy also, although there is one hiccup where the client request throws errors in the server, because the parameters in the clients request are not their when the server is looking for them. So had to comment out heaps in the server so i could get a positive response for both the client and the server." />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/httpclient.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/test/nz/ac/vuw/jenz/httpclient/TestWhetherDoesGoogleKnowsTheAnswer.class" />
+    <entry file="file://$PROJECT_DIR$/target/test-classes/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="612">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/test-classes/test/nz/ac/vuw/jenz/httpclient/TestWhetherDoesGoogleKnowsTheAnswer.class">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="391">
+          <caret line="33" column="63" selection-start-line="25" selection-start-column="8" selection-end-line="33" selection-end-column="63" />
           <folding>
-            <element signature="e#0#1170#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/jenz/httpclient/TestWhetherDoesGoogleKnowsTheAnswer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Appender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        <state relative-caret-position="528">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#574#584#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+            <element signature="e#1266#1267#0" expanded="true" />
+            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#1394#1395#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -354,9 +515,79 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>httpclient</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: commons-codec:commons-codec:1.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
