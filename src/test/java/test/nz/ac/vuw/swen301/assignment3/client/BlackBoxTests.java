@@ -1,5 +1,7 @@
 package test.nz.ac.vuw.swen301.assignment3.client;
 
+import nz.ac.vuw.swen301.assignment3.client.Appender;
+import nz.ac.vuw.swen301.assignment3.client.T1Layout;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -9,38 +11,44 @@ import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Layout;
+import org.apache.log4j.Logger;
+import org.apache.log4j.pattern.LogEvent;
 import org.junit.Test;
 
+import java.awt.*;
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.apache.log4j.LogManager.getLogger;
+import static org.junit.Assert.*;
 
 public class BlackBoxTests {
 
     @Test
     public void testDoPost() throws Exception {
-        URIBuilder builder = new URIBuilder();
 
         //make appender that creates logs
-        //logs don't need layout through requireslayout method
-        //but lay them out for the server to enjoy
-        //make json converter
-        //set value in 'logs' parameter as the json string and send
-        builder.setScheme("http").setHost("localhost").setPort(8080).setPath("/resthome4logs/logs");
+        Logger log = getLogger("logT1");
+        Appender m = new Appender();
+        log.addAppender(m);
+        log.error("The error was me all along.");
+        //assertEquals(201,postResponse.getStatusLine().getStatusCode());
+
+        URIBuilder builder = new URIBuilder();
+        builder.setScheme("http").setHost("localhost").setPort(8080).setPath("/resthome4logs/logs")
+                .setParameter("level", "ERROR").setParameter("limit", "1");
         URI uri = builder.build();
         // http://localhost:8080/resthome4logs
         HttpClient httpClient = HttpClientBuilder.create().build();
-        //post request to server
-        HttpPost postRequest = new HttpPost(uri);
-        String params = "";
-        //make entity and place in request
-        postRequest.setEntity(new StringEntity(params, "UTF-8"));
-        HttpResponse postResponse = httpClient.execute(postRequest);
-        String postContent = EntityUtils.toString(postResponse.getEntity());
-        // check whether the web page contains the expected answer
-        assertEquals(201,postResponse.getStatusLine().getStatusCode());
+
+        //get request to server
+        HttpGet getRequest = new HttpGet(uri);
+        HttpResponse getResponse = httpClient.execute(getRequest);
+        String getContent = EntityUtils.toString(getResponse.getEntity());
+        assertEquals(200,getResponse.getStatusLine().getStatusCode());
+        //assertNotNull(getResponse.getHeaders("logs"));
+        //System.out.print(getResponse.getHeaders("logs"));
     }
 
     @Test
@@ -57,6 +65,7 @@ public class BlackBoxTests {
         HttpResponse getResponse = httpClient.execute(getRequest);
         String getContent = EntityUtils.toString(getResponse.getEntity());
         assertEquals(200,getResponse.getStatusLine().getStatusCode());
+        assertNotNull(getResponse.getHeaders("logs"));
 
     }
 

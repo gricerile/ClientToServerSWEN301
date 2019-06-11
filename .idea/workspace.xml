@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720896f7-abf3-4c1d-9e18-46e68391dde6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180813.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Appender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java" afterDir="false" />
+    <list default="true" id="720896f7-abf3-4c1d-9e18-46e68391dde6" name="Default Changelist" comment="client has made a lot of progress and can now send json logs to the server. Server has been altered and tests do not work anymore, crazy i know.">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/T1Layout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/httpclient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/httpclient.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/jenz/httpclient/TestWhetherDoesGoogleKnowsTheAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Appender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Appender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="33" column="63" selection-start-line="25" selection-start-column="8" selection-end-line="33" selection-end-column="63" />
+            <state relative-caret-position="289">
+              <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,17 +38,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Appender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+            <state relative-caret-position="1394">
+              <caret line="82" column="41" lean-forward="true" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#574#584#0" expanded="true" />
-                <element signature="e#1224#1225#0" expanded="true" />
-                <element signature="e#1266#1267#0" expanded="true" />
-                <element signature="e#1293#1294#0" expanded="true" />
-                <element signature="e#1327#1328#0" expanded="true" />
-                <element signature="e#1366#1367#0" expanded="true" />
-                <element signature="e#1394#1395#0" expanded="true" />
+                <element signature="e#584#592#0" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#2250#2258#0" expanded="true" />
+                <element signature="e#3336#3337#0" expanded="true" />
+                <element signature="e#3403#3404#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/T1Layout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="460">
+              <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -97,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/TestWhetherDoesGoogleKnowsTheAnswer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/T1Layout.java" />
         <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Appender.java" />
       </list>
     </option>
@@ -112,8 +114,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,7 +280,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BlackBoxTests">
+  <component name="RunManager" selected="JUnit.BlackBoxTests.testDoPost">
     <configuration name="BlackBoxTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="httpclient" />
       <extension name="coverage">
@@ -360,9 +362,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BlackBoxTests" />
-        <item itemvalue="JUnit.BlackBoxTests.testDoGet" />
         <item itemvalue="JUnit.BlackBoxTests.testDoPost" />
+        <item itemvalue="JUnit.BlackBoxTests.testDoGet" />
+        <item itemvalue="JUnit.BlackBoxTests" />
         <item itemvalue="JUnit.TestWhetherDoesGoogleKnowsTheAnswer.testDoPost" />
         <item itemvalue="JUnit.TestWhetherDoesGoogleKnowsTheAnswer.testDoGet" />
       </list>
@@ -380,7 +382,9 @@
       <updated>1560040761250</updated>
       <workItem from="1560040764183" duration="7650000" />
       <workItem from="1560124666167" duration="6646000" />
-      <workItem from="1560134674928" duration="4404000" />
+      <workItem from="1560134674928" duration="4890000" />
+      <workItem from="1560206545585" duration="2086000" />
+      <workItem from="1560208891410" duration="11326000" />
     </task>
     <task id="LOCAL-00001" summary="got connection with a response, the server is happy also, although there is one hiccup where the client request throws errors in the server, because the parameters in the clients request are not their when the server is looking for them. So had to comment out heaps in the server so i could get a positive response for both the client and the server.">
       <created>1560045402352</created>
@@ -389,49 +393,55 @@
       <option name="project" value="LOCAL" />
       <updated>1560045402352</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="made an appeneder and i'm not sure what to store and what to do with the logs stored inside the appender. Perhaps it will just be a storage place for logs... not to sure, will get help soon.">
+      <created>1560139565793</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560139565793</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer_testDoPost - 2019.06.10 at 12h 09m 57s.xml">
-      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.testDoPost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer_testDoPost - 2019.06.10 at 12h 13m 13s.xml">
-      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.testDoPost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer_testDoPost - 2019.06.10 at 12h 21m 36s.xml">
-      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.testDoPost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer_testDoGet_(1) - 2019.06.10 at 12h 51m 37s.xml">
-      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.testDoGet (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestWhetherDoesGoogleKnowsTheAnswer_testDoPost_(1) - 2019.06.10 at 12h 52m 03s.xml">
-      <configuration name="TestWhetherDoesGoogleKnowsTheAnswer.testDoPost (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BlackBoxTests_testDoPost - 2019.06.10 at 12h 54m 48s.xml">
+    <history-entry file="BlackBoxTests_testDoPost - 2019.06.11 at 13h 48m 48s.xml">
       <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests_testDoGet - 2019.06.10 at 12h 54m 54s.xml">
-      <configuration name="BlackBoxTests.testDoGet" configurationId="JUnit" />
+    <history-entry file="BlackBoxTests_testDoPost - 2019.06.11 at 13h 48m 49s.xml">
+      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests_testDoGet - 2019.06.10 at 13h 36m 23s.xml">
-      <configuration name="BlackBoxTests.testDoGet" configurationId="JUnit" />
+    <history-entry file="BlackBoxTests_testDoPost - 2019.06.11 at 13h 56m 13s.xml">
+      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests_testDoGet - 2019.06.10 at 15h 03m 09s.xml">
-      <configuration name="BlackBoxTests.testDoGet" configurationId="JUnit" />
+    <history-entry file="BlackBoxTests_testDoPost - 2019.06.11 at 14h 00m 44s.xml">
+      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests - 2019.06.10 at 15h 03m 30s.xml">
-      <configuration name="BlackBoxTests" configurationId="JUnit" />
+    <history-entry file="BlackBoxTests_testDoPost - 2019.06.11 at 14h 02m 34s.xml">
+      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests_testDoPost - 2019.06.11 at 14h 06m 07s.xml">
+      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests_testDoPost - 2019.06.11 at 14h 15m 59s.xml">
+      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests_testDoPost - 2019.06.11 at 14h 18m 45s.xml">
+      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests_testDoPost - 2019.06.11 at 14h 18m 51s.xml">
+      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests_testDoPost - 2019.06.11 at 14h 23m 01s.xml">
+      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18700000" />
+    <option name="totallyTimeSpent" value="32598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26040554" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -440,7 +450,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2554585" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.19978166" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.13427947" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -448,8 +458,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32969433" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49893278" visible="true" weight="0.09279476" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010672" side_tool="true" visible="true" weight="0.09279476" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -468,27 +478,71 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="got connection with a response, the server is happy also, although there is one hiccup where the client request throws errors in the server, because the parameters in the clients request are not their when the server is looking for them. So had to comment out heaps in the server so i could get a positive response for both the client and the server." />
-    <option name="LAST_COMMIT_MESSAGE" value="got connection with a response, the server is happy also, although there is one hiccup where the client request throws errors in the server, because the parameters in the clients request are not their when the server is looking for them. So had to comment out heaps in the server so i could get a positive response for both the client and the server." />
+    <MESSAGE value="made an appeneder and i'm not sure what to store and what to do with the logs stored inside the appender. Perhaps it will just be a storage place for logs... not to sure, will get help soon." />
+    <MESSAGE value="client has made a lot of progress and can now send json logs to the server. Server has been altered and tests do not work anymore, crazy i know." />
+    <option name="LAST_COMMIT_MESSAGE" value="client has made a lot of progress and can now send json logs to the server. Server has been altered and tests do not work anymore, crazy i know." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/httpclient.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/target/test-classes/test/nz/ac/vuw/jenz/httpclient/TestWhetherDoesGoogleKnowsTheAnswer.class" />
-    <entry file="file://$PROJECT_DIR$/target/test-classes/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/AppenderSkeleton.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="-423">
+          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/Layout.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/spi/LoggingEvent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3009">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="33" column="63" selection-start-line="25" selection-start-column="8" selection-end-line="33" selection-end-column="63" />
+        <state relative-caret-position="289">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.8/httpclient-4.5.8.jar!/org/apache/http/client/methods/HttpEntityEnclosingRequestBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/T1Layout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -497,17 +551,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Appender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+        <state relative-caret-position="1394">
+          <caret line="82" column="41" lean-forward="true" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#574#584#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
+            <element signature="e#584#592#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#2250#2258#0" expanded="true" />
+            <element signature="e#3336#3337#0" expanded="true" />
+            <element signature="e#3403#3404#0" expanded="true" />
           </folding>
         </state>
       </provider>
