@@ -31,11 +31,11 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 
-public class Appender extends AppenderSkeleton {
+public class Resthome4LogsAppender extends AppenderSkeleton {
     private ArrayList<String> stringEvents = new ArrayList<String>();
     private int count = 0;
 
-    public Appender() {
+    public Resthome4LogsAppender() {
         this.layout= new T1Layout();
     }
 
