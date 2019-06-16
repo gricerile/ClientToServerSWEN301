@@ -7,6 +7,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
@@ -22,6 +23,7 @@ public class BlackBoxTests {
 
         //make appender that creates logs
         Logger log = getLogger("logT1");
+        log.setLevel(Level.ALL);
         Resthome4LogsAppender m = new Resthome4LogsAppender();
         log.addAppender(m);
         log.error("The error was me all along.");

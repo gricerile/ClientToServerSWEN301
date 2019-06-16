@@ -1,5 +1,6 @@
 package nz.ac.vuw.swen301.assignment3.client;
 
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 import java.nio.charset.Charset;
@@ -23,6 +24,7 @@ public class CreateRandomLogs {
 
     public void generateRandomLogs(){
         Logger log = getLogger("logger-GenerateRandomLogs");
+        log.setLevel(Level.ALL);
         log.addAppender(this.appender);
         while(true){
             try {
@@ -53,6 +55,7 @@ public class CreateRandomLogs {
             else{
 
             }
+
         }
     }
 
