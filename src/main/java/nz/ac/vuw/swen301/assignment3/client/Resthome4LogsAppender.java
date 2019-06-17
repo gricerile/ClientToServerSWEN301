@@ -44,9 +44,8 @@ public class Resthome4LogsAppender extends AppenderSkeleton {
         String logEvent = this.layout.format(loggingEvent);
         count++;
         this.stringEvents.add(logEvent);
-        if(this.count==1) {
+        if(this.stringEvents.size()==10) {
             post();
-            count=0;
         }
     }
 
@@ -67,10 +66,10 @@ public class Resthome4LogsAppender extends AppenderSkeleton {
         ObjectMapper objectMapper = new ObjectMapper();
 
         ArrayList<String> events = new ArrayList<String>();
-        for(int i=0; i<1; i++){
+        for(int i=0; i<10; i++){
             events.add(this.stringEvents.get(i));
-            this.stringEvents.remove(i);
         }
+        this.stringEvents.clear();
         String jString = "";
         try {
             jString = objectMapper.writeValueAsString(events);

@@ -24,9 +24,10 @@ public class CreateRandomLogs {
 
     public void generateRandomLogs(){
         Logger log = getLogger("logger-GenerateRandomLogs");
-        log.setLevel(Level.ALL);
+        //log.setLevel(Level.ALL);
         log.addAppender(this.appender);
         while(true){
+            log.setLevel(Level.ALL);
             try {
                 TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
@@ -50,6 +51,7 @@ public class CreateRandomLogs {
                 log.fatal(message);
             }
             if(level.equals("TRACE")){
+                log.setLevel(Level.TRACE);
                 log.trace(message);
             }
             else{
@@ -68,13 +70,10 @@ public class CreateRandomLogs {
     }
 
     private String getRandomLevel() {
-        int min = 1;
-        int max = 7;
+        int min = 2;
+        int max = 6;
         Random r = new Random();
         int number = r.nextInt((max - min) + 1) + min;
-        if(number==1){
-            return "ALL";
-        }
         if(number==2){
             return "DEBUG";
         }
@@ -90,11 +89,8 @@ public class CreateRandomLogs {
         if(number==5){
             return "FATAL";
         }
-        if(number==6){
-            return "TRACE";
-        }
         else{
-            return "OFF";
+            return "TRACE";
         }
     }
 }

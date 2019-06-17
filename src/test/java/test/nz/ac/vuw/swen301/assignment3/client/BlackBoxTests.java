@@ -27,7 +27,6 @@ public class BlackBoxTests {
         Resthome4LogsAppender m = new Resthome4LogsAppender();
         log.addAppender(m);
         log.error("The error was me all along.");
-        //assertEquals(201,postResponse.getStatusLine().getStatusCode());
 
         URIBuilder builder = new URIBuilder();
         builder.setScheme("http").setHost("localhost").setPort(8080).setPath("/resthome4logs/logs")
@@ -39,10 +38,10 @@ public class BlackBoxTests {
         //get request to server
         HttpGet getRequest = new HttpGet(uri);
         HttpResponse getResponse = httpClient.execute(getRequest);
-        String getContent = EntityUtils.toString(getResponse.getEntity());
+        //String getContent = EntityUtils.toString(getResponse.getEntity());
         assertEquals(200,getResponse.getStatusLine().getStatusCode());
-        //assertNotNull(getResponse.getHeaders("logs"));
-        //System.out.print(getResponse.getHeaders("logs"));
+        String i = EntityUtils.toString(getResponse.getEntity());
+
     }
 
     @Test
@@ -77,7 +76,6 @@ public class BlackBoxTests {
         HttpResponse getResponse = httpClient.execute(getRequest);
         String getContent = EntityUtils.toString(getResponse.getEntity());
         assertEquals(400,getResponse.getStatusLine().getStatusCode());
-        //assertNotNull(getResponse.getHeaders("logs"));
 
     }
 
@@ -94,8 +92,8 @@ public class BlackBoxTests {
         HttpGet getRequest = new HttpGet(uri);
         HttpResponse getResponse = httpClient.execute(getRequest);
         String getContent = EntityUtils.toString(getResponse.getEntity());
-        assertEquals(400,getResponse.getStatusLine().getStatusCode());
-        //assertNotNull(getResponse.getHeaders("logs"));
+        assertEquals(200,getResponse.getStatusLine().getStatusCode());
+        assertNotNull(getResponse.getHeaders("logs"));
 
     }
 
