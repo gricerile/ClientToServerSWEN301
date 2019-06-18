@@ -34,6 +34,7 @@ import org.apache.http.util.EntityUtils;
 public class Resthome4LogsAppender extends AppenderSkeleton {
     private ArrayList<String> stringEvents = new ArrayList<String>();
     private int count = 0;
+    private int status;
 
     public Resthome4LogsAppender() {
         this.layout= new T1Layout();
@@ -44,12 +45,16 @@ public class Resthome4LogsAppender extends AppenderSkeleton {
         String logEvent = this.layout.format(loggingEvent);
         count++;
         this.stringEvents.add(logEvent);
-        if(this.stringEvents.size()==10) {
-            post();
+        if(this.stringEvents.size()==10) {//needs to be changed to 10
+            this.status = post();
         }
     }
 
-    public void post(){
+    public int getStatus(){
+        return this.status;
+    }
+
+    public int post(){
         URIBuilder builder = new URIBuilder();
         //post to server
         builder.setScheme("http").setHost("localhost").setPort(8080).setPath("/resthome4logs/logs");
@@ -66,7 +71,7 @@ public class Resthome4LogsAppender extends AppenderSkeleton {
         ObjectMapper objectMapper = new ObjectMapper();
 
         ArrayList<String> events = new ArrayList<String>();
-        for(int i=0; i<10; i++){
+        for(int i=0; i<10; i++){//need to send 10
             events.add(this.stringEvents.get(i));
         }
         this.stringEvents.clear();
@@ -77,7 +82,7 @@ public class Resthome4LogsAppender extends AppenderSkeleton {
             ex.printStackTrace();
         }
         //make entity and place in request
-
+        //System.out.println(jString);
         postRequest.setEntity(new ByteArrayEntity(jString.getBytes()));
         HttpResponse postResponse = null;
         try {
@@ -90,6 +95,7 @@ public class Resthome4LogsAppender extends AppenderSkeleton {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return postResponse.getStatusLine().getStatusCode();
     }
 
     protected String getLogJSONString(LoggingEvent loggingEvent) {
