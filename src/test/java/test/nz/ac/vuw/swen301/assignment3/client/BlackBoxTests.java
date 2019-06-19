@@ -10,6 +10,9 @@ import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
+import org.junit.AfterClass;
+import org.junit.Assume;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.io.UnsupportedEncodingException;
@@ -19,6 +22,14 @@ import static org.apache.log4j.LogManager.getLogger;
 import static org.junit.Assert.*;
 
 public class BlackBoxTests {
+
+    private static Process process;
+    private static final String TEST_HOST = "localhost";
+    private static final int TEST_PORT = 8080;
+    private static final String TEST_PATH = "/resthome4logs"; // as defined in pom.xml
+    private static final String SERVICE_PATH = TEST_PATH + "/logs"; // as defined in pom.xml and web.xml
+    private static final String SERVICE_STATS_PATH = TEST_PATH + "/stats";
+
 
     public void doLogs(Logger log){
         log.error("The error was me all along.");
@@ -35,7 +46,6 @@ public class BlackBoxTests {
 
     @Test
     public void testDoPost() throws Exception {
-        //make appender that creates logs
         Logger log = getLogger("logT1");
         log.setLevel(Level.ALL);
         Resthome4LogsAppender m = new Resthome4LogsAppender();
@@ -44,7 +54,7 @@ public class BlackBoxTests {
         assertEquals(200, m.getStatus());
 
         URIBuilder builder = new URIBuilder();
-        builder.setScheme("http").setHost("localhost").setPort(8080).setPath("/resthome4logs/logs")
+        builder.setScheme("http").setHost(TEST_HOST).setPort(TEST_PORT).setPath(SERVICE_PATH)
                 .setParameter("level", "ERROR").setParameter("limit", "1");
         URI uri = builder.build();
         // http://localhost:8080/resthome4logs
@@ -62,7 +72,7 @@ public class BlackBoxTests {
     @Test
     public void testDoGet() throws Exception {
         URIBuilder builder = new URIBuilder();
-        builder.setScheme("http").setHost("localhost").setPort(8080).setPath("/resthome4logs/logs")
+        builder.setScheme("http").setHost(TEST_HOST).setPort(TEST_PORT).setPath(SERVICE_PATH)
                 .setParameter("level", "DEBUG").setParameter("limit", "1");
         URI uri = builder.build();
         // http://localhost:8080/resthome4logs
@@ -79,7 +89,7 @@ public class BlackBoxTests {
     @Test
     public void testBadDoGet1() throws Exception {
         URIBuilder builder = new URIBuilder();
-        builder.setScheme("http").setHost("localhost").setPort(8080).setPath("/resthome4logs/logs")
+        builder.setScheme("http").setHost(TEST_HOST).setPort(TEST_PORT).setPath(SERVICE_PATH)
                 .setParameter("level", "BAD").setParameter("limit", "1");
         URI uri = builder.build();
         // http://localhost:8080/resthome4logs
@@ -96,8 +106,8 @@ public class BlackBoxTests {
     @Test
     public void testBadDoGet2() throws Exception {
         URIBuilder builder = new URIBuilder();
-        builder.setScheme("http").setHost("localhost").setPort(8080).setPath("/resthome4logs/logs")
-                .setParameter("level", "DEBUG").setParameter("limit", "0");
+        builder.setScheme("http").setHost(TEST_HOST).setPort(TEST_PORT).setPath(SERVICE_PATH)
+                .setParameter("level", "DEBUG").setParameter("limit", "-1");
         URI uri = builder.build();
         // http://localhost:8080/resthome4logs
         HttpClient httpClient = HttpClientBuilder.create().build();
@@ -106,7 +116,7 @@ public class BlackBoxTests {
         HttpGet getRequest = new HttpGet(uri);
         HttpResponse getResponse = httpClient.execute(getRequest);
         String getContent = EntityUtils.toString(getResponse.getEntity());
-        assertEquals(200,getResponse.getStatusLine().getStatusCode());
+        assertEquals(400,getResponse.getStatusLine().getStatusCode());
 
     }
 

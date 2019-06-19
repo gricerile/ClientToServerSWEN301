@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="720896f7-abf3-4c1d-9e18-46e68391dde6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/WhiteBoxTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppender.java" afterDir="false" />
@@ -21,7 +20,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/CreateRandomLogs.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -37,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+            <state relative-caret-position="221">
+              <caret line="70" column="39" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,10 +60,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="1897">
+              <caret line="120" column="5" lean-forward="true" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assume.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#363#364#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,16 +111,16 @@
         <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Appender.java" />
         <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/CreateRandomLogs.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/WhiteBoxTests.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppender.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="8" />
-    <option name="width" value="932" />
-    <option name="height" value="1037" />
+    <option name="x" value="964" />
+    <option name="width" value="956" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -231,22 +242,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BlackBoxTests.testBadDoGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="httpclient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.nz.ac.vuw.swen301.assignment3.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.nz.ac.vuw.swen301.assignment3.client" />
-      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.swen301.assignment3.client.BlackBoxTests" />
-      <option name="METHOD_NAME" value="testBadDoGet" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BlackBoxTests.testBadDoGet2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="httpclient" />
       <extension name="coverage">
@@ -279,13 +274,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BlackBoxTests.testValidRequestResponseCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="httpclient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.nz.ac.vuw.swen301.assignment3.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.nz.ac.vuw.swen301.assignment3.client" />
+      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.swen301.assignment3.client.BlackBoxTests" />
+      <option name="METHOD_NAME" value="testValidRequestResponseCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BlackBoxTests" />
+        <item itemvalue="JUnit.BlackBoxTests.testValidRequestResponseCode" />
         <item itemvalue="JUnit.BlackBoxTests.testDoPost" />
         <item itemvalue="JUnit.BlackBoxTests.testBadDoGet2" />
         <item itemvalue="Application.CreateRandomLogs" />
-        <item itemvalue="JUnit.BlackBoxTests.testBadDoGet" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +332,9 @@
       <workItem from="1560753395455" duration="1205000" />
       <workItem from="1560757394979" duration="596000" />
       <workItem from="1560816465083" duration="4391000" />
-      <workItem from="1560837484626" duration="739000" />
+      <workItem from="1560837484626" duration="1043000" />
+      <workItem from="1560897746390" duration="9847000" />
+      <workItem from="1560920219857" duration="3304000" />
     </task>
     <task id="LOCAL-00001" summary="got connection with a response, the server is happy also, although there is one hiccup where the client request throws errors in the server, because the parameters in the clients request are not their when the server is looking for them. So had to comment out heaps in the server so i could get a positive response for both the client and the server.">
       <created>1560045402352</created>
@@ -351,49 +364,56 @@
       <option name="project" value="LOCAL" />
       <updated>1560562976698</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="minor changes and some new methods added in to help make creating 10 logs easier">
+      <created>1560838715344</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560838715344</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BlackBoxTests_testDoPost - 2019.06.18 at 17h 15m 21s.xml">
-      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
+    <history-entry file="BlackBoxTests_testValidRequestResponseCode - 2019.06.19 at 17h 00m 18s.xml">
+      <configuration name="BlackBoxTests.testValidRequestResponseCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests_testDoPost - 2019.06.18 at 17h 16m 29s.xml">
-      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BlackBoxTests_testDoPost - 2019.06.18 at 17h 17m 18s.xml">
-      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BlackBoxTests_testDoPost - 2019.06.18 at 17h 18m 06s.xml">
-      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BlackBoxTests_testDoPost - 2019.06.18 at 17h 18m 48s.xml">
-      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BlackBoxTests_testDoPost - 2019.06.18 at 17h 21m 55s.xml">
-      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BlackBoxTests - 2019.06.18 at 17h 22m 09s.xml">
+    <history-entry file="BlackBoxTests - 2019.06.19 at 17h 01m 15s.xml">
       <configuration name="BlackBoxTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests_testDoPost - 2019.06.18 at 17h 23m 55s.xml">
-      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
+    <history-entry file="BlackBoxTests - 2019.06.19 at 17h 05m 23s.xml">
+      <configuration name="BlackBoxTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests_testDoPost - 2019.06.18 at 17h 29m 56s.xml">
-      <configuration name="BlackBoxTests.testDoPost" configurationId="JUnit" />
+    <history-entry file="BlackBoxTests - 2019.06.19 at 17h 08m 23s.xml">
+      <configuration name="BlackBoxTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests - 2019.06.18 at 17h 58m 56s.xml">
+    <history-entry file="BlackBoxTests - 2019.06.19 at 17h 09m 15s.xml">
+      <configuration name="BlackBoxTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests_testValidRequestResponseCode - 2019.06.19 at 17h 11m 43s.xml">
+      <configuration name="BlackBoxTests.testValidRequestResponseCode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests - 2019.06.19 at 17h 14m 26s.xml">
+      <configuration name="BlackBoxTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests_testValidRequestResponseCode - 2019.06.19 at 17h 16m 57s.xml">
+      <configuration name="BlackBoxTests.testValidRequestResponseCode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests - 2019.06.19 at 17h 20m 32s.xml">
+      <configuration name="BlackBoxTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlackBoxTests - 2019.06.19 at 18h 52m 54s.xml">
       <configuration name="BlackBoxTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63908000" />
+    <option name="totallyTimeSpent" value="77363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1044" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22465315" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22998933" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -402,7 +422,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6574173" weight="0.14519651" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6574173" visible="true" weight="0.20851529" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4994664" weight="0.066593885" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -410,7 +430,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49252936" visible="true" weight="0.21943231" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49252936" weight="0.21943231" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.3425827" side_tool="true" weight="0.14519651" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="bottom" id="Spring" order="13" />
@@ -465,7 +485,8 @@
     <MESSAGE value="made an appeneder and i'm not sure what to store and what to do with the logs stored inside the appender. Perhaps it will just be a storage place for logs... not to sure, will get help soon." />
     <MESSAGE value="client has made a lot of progress and can now send json logs to the server. Server has been altered and tests do not work anymore, crazy i know." />
     <MESSAGE value="not new updates, minor changes. however just trying to get rid of the red colour classes..." />
-    <option name="LAST_COMMIT_MESSAGE" value="not new updates, minor changes. however just trying to get rid of the red colour classes..." />
+    <MESSAGE value="minor changes and some new methods added in to help make creating 10 logs easier" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes and some new methods added in to help make creating 10 logs easier" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/httpclient.iml">
@@ -522,20 +543,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppender.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/T1Layout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+        <state relative-caret-position="544">
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/T1Layout.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assume.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        <state relative-caret-position="187">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#363#364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="70" column="39" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -551,8 +582,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="1897">
+          <caret line="120" column="5" lean-forward="true" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
