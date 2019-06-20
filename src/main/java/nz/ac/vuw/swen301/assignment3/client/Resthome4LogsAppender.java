@@ -68,7 +68,7 @@ public class Resthome4LogsAppender extends AppenderSkeleton {
         HttpClient httpClient = HttpClientBuilder.create().build();
         //post request to server
         HttpPost postRequest = new HttpPost(uri);
-        postRequest.setHeader("ContentType", "application/json");
+        postRequest.setHeader("Content-Type", "application/json");
         ObjectMapper objectMapper = new ObjectMapper();
 
         ArrayList<String> events = new ArrayList<String>();

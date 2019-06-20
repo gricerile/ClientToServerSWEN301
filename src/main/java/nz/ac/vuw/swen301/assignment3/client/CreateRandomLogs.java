@@ -29,6 +29,7 @@ public class CreateRandomLogs {
         while(true){
             log.setLevel(Level.ALL);
             try {
+                //TimeUnit.MILLISECONDS.sleep(100);
                 TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();

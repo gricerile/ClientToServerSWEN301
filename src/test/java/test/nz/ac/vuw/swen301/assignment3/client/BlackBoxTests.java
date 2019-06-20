@@ -51,7 +51,7 @@ public class BlackBoxTests {
         Resthome4LogsAppender m = new Resthome4LogsAppender();
         log.addAppender(m);
         doLogs(log);
-        assertEquals(200, m.getStatus());
+        assertEquals(201, m.getStatus());
 
         URIBuilder builder = new URIBuilder();
         builder.setScheme("http").setHost(TEST_HOST).setPort(TEST_PORT).setPath(SERVICE_PATH)
