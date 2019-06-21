@@ -146,7 +146,40 @@ public class BlackBoxTests {
         HttpResponse getResponse = httpClient.execute(getRequest);
         String getContent = EntityUtils.toString(getResponse.getEntity());
         assertEquals(400,getResponse.getStatusLine().getStatusCode());
+    }
 
+    @Test
+    public void testStats() throws Exception {
+        Assume.assumeTrue(isServerReady());
+        URIBuilder builder = new URIBuilder();
+        builder.setScheme("http").setHost(TEST_HOST).setPort(TEST_PORT).setPath(SERVICE_STATS_PATH)
+                .setParameter("statsRequest", "not-null");
+        URI uri = builder.build();
+        // http://localhost:8080/resthome4logs
+        HttpClient httpClient = HttpClientBuilder.create().build();
+
+        //get request to server
+        HttpGet getRequest = new HttpGet(uri);
+        HttpResponse getResponse = httpClient.execute(getRequest);
+        String getContent = EntityUtils.toString(getResponse.getEntity());
+        assertEquals(200,getResponse.getStatusLine().getStatusCode());
+    }
+
+    @Test
+    public void testStatsContentType() throws Exception {
+        Assume.assumeTrue(isServerReady());
+        URIBuilder builder = new URIBuilder();
+        builder.setScheme("http").setHost(TEST_HOST).setPort(TEST_PORT).setPath(SERVICE_STATS_PATH)
+                .setParameter("statsRequest", "not-null");
+        URI uri = builder.build();
+        // http://localhost:8080/resthome4logs
+        HttpClient httpClient = HttpClientBuilder.create().build();
+
+        //get request to server
+        HttpGet getRequest = new HttpGet(uri);
+        HttpResponse getResponse = httpClient.execute(getRequest);
+        String getContent = EntityUtils.toString(getResponse.getEntity());
+        assertEquals("application/vnd.ms-excel",getResponse.getEntity().getContentType().getValue());
     }
 
 }
