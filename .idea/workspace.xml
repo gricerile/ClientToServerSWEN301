@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="720896f7-abf3-4c1d-9e18-46e68391dde6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/gricerile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httpclient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/httpclient.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/LogMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/LogMonitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/SeperateLogEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/T1Layout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/T1Layout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/jenz/httpclient/TestWhetherDoesGoogleKnowsTheAnswer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/WhiteBoxTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppenderTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,46 +30,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/CreateRandomLogs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="70" column="39" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/T1Layout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1897">
-              <caret line="120" column="5" lean-forward="true" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
+            <state relative-caret-position="503">
+              <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,12 +54,93 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/WhiteBoxTests.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/CreateRandomLogs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="221">
+              <caret line="27" column="39" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/LogMonitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1302">
+              <caret line="173" selection-start-line="173" selection-end-line="173" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#9623#9624#0" expanded="true" />
+                <element signature="e#9667#9668#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="292">
+                <caret line="22" column="103" selection-start-line="22" selection-start-column="103" selection-end-line="22" selection-end-column="103" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppenderTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1411">
+              <caret line="83" column="31" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1767#1768#0" expanded="true" />
+                <element signature="e#1794#1795#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1931">
+              <caret line="135" column="43" selection-start-line="135" selection-start-column="43" selection-end-line="135" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="112" column="21" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/LogMonitor.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
     </leaf>
@@ -99,6 +152,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>combobox</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -107,20 +165,25 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/jenz/httpclient/TestWhetherDoesGoogleKnowsTheAnswer.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/TestWhetherDoesGoogleKnowsTheAnswer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/T1Layout.java" />
         <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Appender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/CreateRandomLogs.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/WhiteBoxTests.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/LogMonitor.form" />
+        <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/SeperateLogEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/CreateRandomLogs.java" />
         <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppender.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppenderTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/T1Layout.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/LogMonitor.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="964" />
-    <option name="width" value="956" />
-    <option name="height" value="1044" />
+    <option name="x" value="4" />
+    <option name="width" value="1000" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -128,8 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,10 +245,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="httpclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="httpclient" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,9 +281,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BlackBoxTests">
-    <configuration name="CreateRandomLogs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nz.ac.vuw.swen301.assignment3.client.CreateRandomLogs" />
+  <component name="RunManager" selected="Application.LogMonitor">
+    <configuration name="LogMonitor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nz.ac.vuw.swen301.assignment3.client.LogMonitor" />
       <module name="httpclient" />
       <extension name="coverage">
         <pattern>
@@ -227,7 +295,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BlackBoxTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Resthome4LogsAppenderTests.test11Logs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="httpclient" />
       <extension name="coverage">
         <pattern>
@@ -236,29 +304,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.nz.ac.vuw.swen301.assignment3.client" />
-      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.swen301.assignment3.client.BlackBoxTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BlackBoxTests.testBadDoGet2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="httpclient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.nz.ac.vuw.swen301.assignment3.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.nz.ac.vuw.swen301.assignment3.client" />
-      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.swen301.assignment3.client.BlackBoxTests" />
-      <option name="METHOD_NAME" value="testBadDoGet2" />
+      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.swen301.assignment3.client.Resthome4LogsAppenderTests" />
+      <option name="METHOD_NAME" value="test11Logs" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BlackBoxTests.testDoPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Resthome4LogsAppenderTests.testDifferentLevelLogs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="httpclient" />
       <extension name="coverage">
         <pattern>
@@ -267,14 +320,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.nz.ac.vuw.swen301.assignment3.client" />
-      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.swen301.assignment3.client.BlackBoxTests" />
-      <option name="METHOD_NAME" value="testDoPost" />
+      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.swen301.assignment3.client.Resthome4LogsAppenderTests" />
+      <option name="METHOD_NAME" value="testDifferentLevelLogs" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BlackBoxTests.testValidRequestResponseCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Resthome4LogsAppenderTests.testDifferentLoggers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="httpclient" />
       <extension name="coverage">
         <pattern>
@@ -283,8 +336,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.nz.ac.vuw.swen301.assignment3.client" />
-      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.swen301.assignment3.client.BlackBoxTests" />
-      <option name="METHOD_NAME" value="testValidRequestResponseCode" />
+      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.swen301.assignment3.client.Resthome4LogsAppenderTests" />
+      <option name="METHOD_NAME" value="testDifferentLoggers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Resthome4LogsAppenderTests.testPatternLayout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="httpclient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.nz.ac.vuw.swen301.assignment3.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.nz.ac.vuw.swen301.assignment3.client" />
+      <option name="MAIN_CLASS_NAME" value="test.nz.ac.vuw.swen301.assignment3.client.Resthome4LogsAppenderTests" />
+      <option name="METHOD_NAME" value="testPatternLayout" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -292,11 +361,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BlackBoxTests" />
-        <item itemvalue="JUnit.BlackBoxTests.testValidRequestResponseCode" />
-        <item itemvalue="JUnit.BlackBoxTests.testDoPost" />
-        <item itemvalue="JUnit.BlackBoxTests.testBadDoGet2" />
-        <item itemvalue="Application.CreateRandomLogs" />
+        <item itemvalue="Application.LogMonitor" />
+        <item itemvalue="JUnit.Resthome4LogsAppenderTests.testDifferentLoggers" />
+        <item itemvalue="JUnit.Resthome4LogsAppenderTests.testDifferentLevelLogs" />
+        <item itemvalue="JUnit.Resthome4LogsAppenderTests.test11Logs" />
+        <item itemvalue="JUnit.Resthome4LogsAppenderTests.testPatternLayout" />
       </list>
     </recent_temporary>
   </component>
@@ -335,6 +404,8 @@
       <workItem from="1560837484626" duration="1043000" />
       <workItem from="1560897746390" duration="9847000" />
       <workItem from="1560920219857" duration="3304000" />
+      <workItem from="1560991016895" duration="20520000" />
+      <workItem from="1561065295421" duration="18143000" />
     </task>
     <task id="LOCAL-00001" summary="got connection with a response, the server is happy also, although there is one hiccup where the client request throws errors in the server, because the parameters in the clients request are not their when the server is looking for them. So had to comment out heaps in the server so i could get a positive response for both the client and the server.">
       <created>1560045402352</created>
@@ -371,50 +442,66 @@
       <option name="project" value="LOCAL" />
       <updated>1560838715344</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="log monitor is up and running, it receives the json string of desired logs in the fetch functions, download is not implemented. having trouble with table reloading its updates, not sure how to get around that.">
+      <created>1561020490170</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561020490170</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BlackBoxTests_testValidRequestResponseCode - 2019.06.19 at 17h 00m 18s.xml">
-      <configuration name="BlackBoxTests.testValidRequestResponseCode" configurationId="JUnit" />
+    <history-entry file="Resthome4LogsAppenderTests_test11Logs - 2019.06.21 at 13h 23m 06s.xml">
+      <configuration name="Resthome4LogsAppenderTests.test11Logs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests - 2019.06.19 at 17h 01m 15s.xml">
-      <configuration name="BlackBoxTests" configurationId="JUnit" />
+    <history-entry file="Resthome4LogsAppenderTests_test11Logs - 2019.06.21 at 13h 24m 08s.xml">
+      <configuration name="Resthome4LogsAppenderTests.test11Logs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests - 2019.06.19 at 17h 05m 23s.xml">
-      <configuration name="BlackBoxTests" configurationId="JUnit" />
+    <history-entry file="Resthome4LogsAppenderTests_test11Logs - 2019.06.21 at 13h 24m 25s.xml">
+      <configuration name="Resthome4LogsAppenderTests.test11Logs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests - 2019.06.19 at 17h 08m 23s.xml">
-      <configuration name="BlackBoxTests" configurationId="JUnit" />
+    <history-entry file="Resthome4LogsAppenderTests_test11Logs - 2019.06.21 at 13h 24m 42s.xml">
+      <configuration name="Resthome4LogsAppenderTests.test11Logs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests - 2019.06.19 at 17h 09m 15s.xml">
-      <configuration name="BlackBoxTests" configurationId="JUnit" />
+    <history-entry file="Resthome4LogsAppenderTests_test11Logs - 2019.06.21 at 13h 25m 58s.xml">
+      <configuration name="Resthome4LogsAppenderTests.test11Logs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests_testValidRequestResponseCode - 2019.06.19 at 17h 11m 43s.xml">
-      <configuration name="BlackBoxTests.testValidRequestResponseCode" configurationId="JUnit" />
+    <history-entry file="Resthome4LogsAppenderTests_testDifferentLevelLogs - 2019.06.21 at 13h 29m 41s.xml">
+      <configuration name="Resthome4LogsAppenderTests.testDifferentLevelLogs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests - 2019.06.19 at 17h 14m 26s.xml">
-      <configuration name="BlackBoxTests" configurationId="JUnit" />
+    <history-entry file="Resthome4LogsAppenderTests_testDifferentLevelLogs - 2019.06.21 at 13h 30m 30s.xml">
+      <configuration name="Resthome4LogsAppenderTests.testDifferentLevelLogs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests_testValidRequestResponseCode - 2019.06.19 at 17h 16m 57s.xml">
-      <configuration name="BlackBoxTests.testValidRequestResponseCode" configurationId="JUnit" />
+    <history-entry file="Resthome4LogsAppenderTests_testDifferentLoggers - 2019.06.21 at 13h 32m 00s.xml">
+      <configuration name="Resthome4LogsAppenderTests.testDifferentLoggers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests - 2019.06.19 at 17h 20m 32s.xml">
-      <configuration name="BlackBoxTests" configurationId="JUnit" />
+    <history-entry file="Resthome4LogsAppenderTests_testDifferentLoggers - 2019.06.21 at 13h 32m 48s.xml">
+      <configuration name="Resthome4LogsAppenderTests.testDifferentLoggers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlackBoxTests - 2019.06.19 at 18h 52m 54s.xml">
-      <configuration name="BlackBoxTests" configurationId="JUnit" />
+    <history-entry file="Resthome4LogsAppenderTests_testDifferentLoggers - 2019.06.21 at 14h 11m 48s.xml">
+      <configuration name="Resthome4LogsAppenderTests.testDifferentLoggers" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77363000" />
+    <option name="totallyTimeSpent" value="116026000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1044" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22998933" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.89235127" visible="true" weight="0.23959444" />
+      <window_info id="Structure" order="1" sideWeight="0.10764872" side_tool="true" visible="true" weight="0.23959444" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -422,17 +509,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6574173" visible="true" weight="0.20851529" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6574173" weight="0.20851529" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4994664" weight="0.066593885" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32969433" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32969433" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49252936" weight="0.21943231" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49252936" visible="true" weight="0.22925764" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.3425827" side_tool="true" weight="0.14519651" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32969433" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -486,7 +573,8 @@
     <MESSAGE value="client has made a lot of progress and can now send json logs to the server. Server has been altered and tests do not work anymore, crazy i know." />
     <MESSAGE value="not new updates, minor changes. however just trying to get rid of the red colour classes..." />
     <MESSAGE value="minor changes and some new methods added in to help make creating 10 logs easier" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor changes and some new methods added in to help make creating 10 logs easier" />
+    <MESSAGE value="log monitor is up and running, it receives the json string of desired logs in the fetch functions, download is not implemented. having trouble with table reloading its updates, not sure how to get around that." />
+    <option name="LAST_COMMIT_MESSAGE" value="log monitor is up and running, it receives the json string of desired logs in the fetch functions, download is not implemented. having trouble with table reloading its updates, not sure how to get around that." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/httpclient.iml">
@@ -526,27 +614,57 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/test-classes/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.class" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/LogEvent.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/LogMonitor.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/SeperateLogEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
+        <state relative-caret-position="561">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/CreateRandomLogs.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/WhiteBoxTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1931">
+          <caret line="135" column="43" selection-start-line="135" selection-start-column="43" selection-end-line="135" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/T1Layout.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        <state relative-caret-position="373">
+          <caret line="112" column="21" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/LogMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1302">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9623#9624#0" expanded="true" />
+            <element signature="e#9667#9668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/CreateRandomLogs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -563,30 +681,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/T1Layout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppenderTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="83" column="31" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nz/ac/vuw/swen301/assignment3/client/Resthome4LogsAppender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="70" column="39" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
+        <state relative-caret-position="323">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1767#1768#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/WhiteBoxTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/nz/ac/vuw/swen301/assignment3/client/BlackBoxTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1897">
-          <caret line="120" column="5" lean-forward="true" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="292">
+            <caret line="22" column="103" selection-start-line="22" selection-start-column="103" selection-end-line="22" selection-end-column="103" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

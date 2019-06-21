@@ -2,12 +2,14 @@ package nz.ac.vuw.swen301.assignment3.client;
 
 
 import com.google.gson.Gson;
+import org.apache.commons.io.FileUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -18,6 +20,7 @@ import java.awt.Font;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -106,7 +109,7 @@ public class LogMonitor {
         frame.getContentPane().add(scrollPane_1);
         table = new JTable(new DefaultTableModel(new Object[]{"Time","Level", "Logger", "Thread","Message"},0));
         table.setFont(new Font("Arial", Font.PLAIN, 18));
-        model = new DefaultTableModel();
+        //model = new DefaultTableModel();
         scrollPane_1.setViewportView(table);
 
         // Button actions for fetch and download
@@ -158,34 +161,72 @@ public class LogMonitor {
                     //System.out.println(list.get(i).toString());
                 }
 
+                //create new table
+                model = new DefaultTableModel(new Object[]{"Time","Level", "Logger", "Thread","Message"},0);
+                table = new JTable(model);
+                table.setModel(model);
+                table.setFont(new Font("Arial", Font.PLAIN, 12));
+                JScrollPane scrollPane_1 = new JScrollPane(table);
+                scrollPane_1.setBounds(10, 100, 711, 295);
+                frame.getContentPane().add(scrollPane_1);
+                scrollPane_1.setViewportView(table);
+
+
                 //get information from logs and enter them into rows and columns
                 for(int i = 0; i < list.size(); i++){
                     String time = list.get(i).get("timestamp").toString();
-                    System.out.println(time);
+                    //System.out.println(time);
                     String levels = list.get(i).get("level").toString();
-                    System.out.println(levels);
+                    //System.out.println(levels);
                     String logger = list.get(i).get("logger").toString();
-                    System.out.println(logger);
+                    //System.out.println(logger);
                     String thread = list.get(i).get("thread").toString();
-                    System.out.println(thread);
+                    //System.out.println(thread);
                     String message = list.get(i).get("message").toString();
-                    System.out.println(message);
+                    //System.out.println(message);
                     model.addRow(new Object[]{time , levels, logger, thread, message});
                 }
-                table.setModel(model);
-                //display the table correctly
-                model.fireTableDataChanged();
-                //table.repaint();
             }
         });
 
         download.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //make request to /stats and set paramters
+                //make request to /stats and set parameters
+                URIBuilder builder = new URIBuilder();
+                builder.setScheme("http").setHost(TEST_HOST).setPort(TEST_PORT).setPath(SERVICE_STATS_PATH)
+                        .setParameter("statsRequest", "notNull");
+                URI uri = null;
+                try {
+                    uri = builder.build();
+                } catch (URISyntaxException ex) {
+                    ex.printStackTrace();
+                }
+                // http://localhost:8080/resthome4logs
+                HttpClient httpClient = HttpClientBuilder.create().build();
 
+                //get request to server
+                HttpGet getRequest = new HttpGet(uri);
+                HttpResponse getResponse = null;
+
+                try {
+                    getResponse = httpClient.execute(getRequest);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
                 //get file
-
+                File downloadedFile = new File("stats.xlsx");
+                try {
+                    FileUtils.copyInputStreamToFile(getResponse.getEntity().getContent(), downloadedFile);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                } finally {
+                    try {
+                        getResponse.getEntity().getContent().close();
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                }
                 //download it
             }
         });
@@ -201,6 +242,7 @@ public class LogMonitor {
     public void doPostTest() {
         Logger log = getLogger("logger-GenerateRandomLogs");
         log.addAppender(new Resthome4LogsAppender());
+        log.setLevel(Level.ALL);
         log.error("The error was me all along.");
         log.trace("The error was me all along.");
         log.fatal("The error was me all along.");

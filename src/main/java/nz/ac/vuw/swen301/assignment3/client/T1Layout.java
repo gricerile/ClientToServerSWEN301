@@ -39,7 +39,7 @@ public class T1Layout extends Layout {
         String date = formatter.format(new Date());
         data.put("timestamp", date);
         data.put("thread", loggingEvent.getThreadName());
-        data.put("logger", loggingEvent.getLogger().getClass().toString());
+        data.put("logger", loggingEvent.getLogger().getName());
         data.put("level", loggingEvent.getLevel().toString());
         if(loggingEvent.getThrowableInformation() != null){
             data.put("errorDetails", loggingEvent.getThrowableInformation().toString());

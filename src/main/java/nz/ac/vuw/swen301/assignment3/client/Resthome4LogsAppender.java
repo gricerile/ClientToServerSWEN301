@@ -47,7 +47,12 @@ public class Resthome4LogsAppender extends AppenderSkeleton {
         this.stringEvents.add(logEvent);
         if(this.stringEvents.size()==10) {//needs to be changed to 10
             this.status = post();
+            count = 0;
         }
+    }
+
+    public ArrayList<String> getStringEvents(){
+        return  this.stringEvents;
     }
 
     public int getStatus(){
@@ -55,6 +60,7 @@ public class Resthome4LogsAppender extends AppenderSkeleton {
     }
 
     public int post(){
+
         URIBuilder builder = new URIBuilder();
         //post to server
         builder.setScheme("http").setHost("localhost").setPort(8080).setPath("/resthome4logs/logs");

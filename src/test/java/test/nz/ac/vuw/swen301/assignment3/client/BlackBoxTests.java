@@ -30,6 +30,31 @@ public class BlackBoxTests {
     private static final String SERVICE_PATH = TEST_PATH + "/logs"; // as defined in pom.xml and web.xml
     private static final String SERVICE_STATS_PATH = TEST_PATH + "/stats";
 
+    private HttpResponse get(URI uri) throws Exception {
+        HttpClient httpClient = HttpClientBuilder.create().build();
+        HttpGet request = new HttpGet(uri);
+        return httpClient.execute(request);
+    }
+
+    private boolean isServerReady() throws Exception {
+        URIBuilder builder = new URIBuilder();
+        builder.setScheme("http").setHost(TEST_HOST).setPort(TEST_PORT).setPath(TEST_PATH);
+        URI uri = builder.build();
+        try {
+            HttpResponse response = get(uri);
+            boolean success = response.getStatusLine().getStatusCode() == 200;
+
+            if (!success) {
+                System.err.println("Check whether server is up and running, request to " + uri + " returns " + response.getStatusLine());
+            }
+
+            return success;
+        }
+        catch (Exception x) {
+            System.err.println("Encountered error connecting to " + uri + " -- check whether server is running and application has been deployed");
+            return false;
+        }
+    }
 
     public void doLogs(Logger log){
         log.error("The error was me all along.");
@@ -46,6 +71,7 @@ public class BlackBoxTests {
 
     @Test
     public void testDoPost() throws Exception {
+        Assume.assumeTrue(isServerReady());
         Logger log = getLogger("logT1");
         log.setLevel(Level.ALL);
         Resthome4LogsAppender m = new Resthome4LogsAppender();
@@ -71,6 +97,7 @@ public class BlackBoxTests {
 
     @Test
     public void testDoGet() throws Exception {
+        Assume.assumeTrue(isServerReady());
         URIBuilder builder = new URIBuilder();
         builder.setScheme("http").setHost(TEST_HOST).setPort(TEST_PORT).setPath(SERVICE_PATH)
                 .setParameter("level", "DEBUG").setParameter("limit", "1");
@@ -88,6 +115,7 @@ public class BlackBoxTests {
 
     @Test
     public void testBadDoGet1() throws Exception {
+        Assume.assumeTrue(isServerReady());
         URIBuilder builder = new URIBuilder();
         builder.setScheme("http").setHost(TEST_HOST).setPort(TEST_PORT).setPath(SERVICE_PATH)
                 .setParameter("level", "BAD").setParameter("limit", "1");
@@ -105,6 +133,7 @@ public class BlackBoxTests {
 
     @Test
     public void testBadDoGet2() throws Exception {
+        Assume.assumeTrue(isServerReady());
         URIBuilder builder = new URIBuilder();
         builder.setScheme("http").setHost(TEST_HOST).setPort(TEST_PORT).setPath(SERVICE_PATH)
                 .setParameter("level", "DEBUG").setParameter("limit", "-1");
